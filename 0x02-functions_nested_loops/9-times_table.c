@@ -14,24 +14,37 @@ while (j < 9)
 {
 if (i * j < 10)
 {
-_putchar(i * j + 48);
+if (j != 0)
+{
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
 }
+_putchar(i * j + 48);
+}
 else
 {
-_putchar(i * j / 10 + 48);
-_putchar(i * j % 10 + 48);
+if (j != 0)
+{
 _putchar(',');
 _putchar(' ');
+}
+_putchar(i * j / 10 + 48);
+_putchar(i * j % 10 + 48);
 }
 j++;
 }
 if ((i * j) < 10)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
 _putchar(i * j + 48);
+}
 else
 {
+_putchar(',');
+_putchar(' ');
 _putchar(i * j / 10 + 48);
 _putchar(i * j % 10 + 48);
 }
