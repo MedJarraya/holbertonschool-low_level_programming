@@ -2,13 +2,13 @@
 /**
  * jack_bauer - prints every minute of the day
  * Return: (0)
- * 
+ *
  **/
 void jack_bauer(void)
 {
 int i = 0, j = 0;
 
-while(i < 24)
+while (i < 24)
 {
 while (j < 60)
 {
