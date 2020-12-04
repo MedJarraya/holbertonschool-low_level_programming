@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - display 
+ * main - display
  * @argc: variable
  * @argv: string
  * Return: 0
