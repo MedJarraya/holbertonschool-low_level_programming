@@ -16,7 +16,6 @@ int a, rw, len = 0;
 a = open(filename, O_WRONLY | O_APPEND);
 	if (a < 0)
 	return (-1);
-
 		if (text_content != NULL)
 		{
 		while (text_content[len])
