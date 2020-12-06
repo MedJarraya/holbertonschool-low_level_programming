@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * print_list - prints elemtns, numbers and lists
- * @h: struc
- * Return: number of nodes
+ * print_list - prints list and elements of their number
+ * @h: structure
+ * Return: nbr of nodes
  */
 size_t print_list(const list_t *h)
 {
