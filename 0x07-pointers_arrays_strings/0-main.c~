@@ -1,0 +1,46 @@
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ * simple_print_buffer - print
+ * @buffer: int
+ * @size: int
+ *
+ * Return: 0
+ */
+void simple_print_buffer(char *buffer, unsigned int size)
+{
+        unsigned int a;
+
+        a = 0;
+        while (a < size)
+        {
+                if (a % 10)
+                {
+                        printf(" ");
+                }
+                if (!(a % 10) && a)
+                {
+                        printf("\n");
+                }
+                printf("0x%02x", buffer[a]);
+                a++;
+        }
+        printf("\n");
+}
+
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char buffer[98] = {0x00};
+
+    simple_print_buffer(buffer, 98);
+    _memset(buffer, 0x01, 95);
+    printf("-------------------------------------------------\n");
+    simple_print_buffer(buffer, 98);    
+    return (0);
+}
