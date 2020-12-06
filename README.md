@@ -1,1 +1,1 @@
-hello C
+read me pls
