@@ -1,0 +1,16 @@
+# Define the C compiler to use
+CC = gcc
+
+# Define the C source files
+SRC = m.h holberton.c main.c
+
+# It is replacing the suffix .c of all words in the macro SRC
+# with the .o suffix
+OBJ = $(SRC:.c=.o)
+
+# Define name of the executable
+NAME = holberton
+
+# Build  an excutable named holberton from m.h, main.c, holberton.h
+all: $(OBJ)
+	$(CC) -Wall -Werror -Wextra -pedantic $(OBJ) -o $(NAME)
