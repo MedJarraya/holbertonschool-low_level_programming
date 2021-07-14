@@ -1,0 +1,9 @@
+# define the C compiler to use
+CC = gcc
+
+# define the C source files
+SRC = m.h holberton.c main.c
+
+# build  an excutable named holberton from m.h, main.c, holberton.h
+all:
+	$(CC) -Wall -Werror -Wextra -pedantic $(SRC) -o holberton
