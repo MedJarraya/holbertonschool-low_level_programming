@@ -20,9 +20,4 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
-<<<<<<< HEAD
-
 #endif
-=======
-#endif
->>>>>>> dd6e5888025ec18a657726a822ae37531c658d7a
