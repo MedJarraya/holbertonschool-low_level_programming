@@ -2,9 +2,9 @@
 
 /**
   * linear_search - searc h
-  * @array: arr
+  * @array: array
   * @size: size
-  * @value: val
+  * @value: value
   * Return: always
   */
 
