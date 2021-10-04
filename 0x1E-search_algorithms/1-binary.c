@@ -3,21 +3,21 @@
 /**
  * print_array - print
  *
- * @array: arr
+ * @array: array
  * @first: first
  * @last: last
  */
 
 void print_array(int *array, size_t first, size_t last)
 {
-	size_t k;
+	size_t x;
 
 	printf("Searching in array: ");
-	for (k = first; k <= last; k++)
+	for (x = first; x <= last; x++)
 	{
-		if (k != first)
+		if (x != first)
 			printf(", ");
-		printf("%d", array[k]);
+		printf("%d", array[x]);
 	}
 	printf("\n");
 }
@@ -32,21 +32,21 @@ void print_array(int *array, size_t first, size_t last)
 
 int binary_search(int *array, size_t size, int value)
 {
-	size_t k = 0, first = 0, last = size - 1;
+	size_t x = 0, first = 0, last = size - 1;
 
 	if (array)
 	{
 		while (first <= last)
 		{
 			print_array(array, first, last);
-			k = (first + last) / 2;
+			x = (first + last) / 2;
 
-			if (value > array[k])
-				first = k + 1;
-			else if (value < array[k])
-				last = k - 1;
+			if (value > array[x])
+				first = x + 1;
+			else if (value < array[x])
+				last = x - 1;
 			else
-				return (k);
+				return (x);
 		}
 	}
 
